@@ -16,6 +16,7 @@ use tracing::warn;
 
 use crate::{CommitStatus, CreateStatus, Forge, SubmitOptions, SubmitStatus};
 
+#[derive(Debug)]
 pub struct BranchPushForge<'a> {
     pub effects: &'a Effects,
     pub git_run_info: &'a GitRunInfo,
